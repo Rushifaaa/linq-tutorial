@@ -15,7 +15,7 @@ namespace linq
             {
                 Console.WriteLine(name);
             }
-            Console.WriteLine();
+            Console.WriteLine("______________________________________________________________________________________________");
 
             Console.WriteLine("Part 1-2 - LinqTest2");
             foreach (string name in linqTest2)
