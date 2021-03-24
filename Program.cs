@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace linq
 {
@@ -8,7 +9,16 @@ namespace linq
         static void Main(string[] args)
         {
             string[] names = { "Hans", "Peter", "Mustername", "Manfred", "Günther", "Gustav" };
+            List<Student> students = new List<Student>();
+
             LinqTest(names);
+
+            students.Add(new Student(DegreeCourse.Biology, 3, "Sabrina", "Vogel"));
+            students.Add(new Student(DegreeCourse.Biology, 3, "Anton", "Buffberger"));
+            students.Add(new Student(DegreeCourse.Biology, 3, "Berta", "Nudel"));
+            students.Add(new Student(DegreeCourse.Biology, 3, "Max", "Mustermann"));
+
+            Part3.LinqPart3(students);
         }
 
         static void LinqTest(string[] names)
