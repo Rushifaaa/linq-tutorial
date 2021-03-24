@@ -40,11 +40,11 @@ namespace linq
             Part3.LinqAnimals(animals: animals);
             Console.WriteLine();
 
-            people.Add(new Person(age: 12, name: "Benjamin", lastname: "Boban"));
-            people.Add(new Person(age: 32, name: "Alina", lastname: "Müll"));
-            people.Add(new Person(age: 7, name: "Benjamin", lastname: "Müll"));
-            people.Add(new Person(age: 18, name: "Daniela", lastname: "Blumemkohl"));
-            people.Add(new Person(age: 20, name: "Carlos", lastname: "Rodrigez"));
+            people.Add(new Person(age: 12, name: "Benjamin", lastname: "Boban", job: "Applikationsentwickler"));
+            people.Add(new Person(age: 32, name: "Alina", lastname: "Müll", job: "Applikationsentwickler"));
+            people.Add(new Person(age: 7, name: "Benjamin", lastname: "Müll", job: "Maurer"));
+            people.Add(new Person(age: 18, name: "Daniela", lastname: "Blumemkohl", job: "Applikationsentwickler"));
+            people.Add(new Person(age: 20, name: "Carlos", lastname: "Rodrigez", job: "Maurer"));
 
             Console.WriteLine("Part 4 - Order By");
             Part4.OrderByName(people: people);
@@ -52,6 +52,10 @@ namespace linq
 
             Console.WriteLine("Part 4 - Then By");
             Part4.ThenByName(people: people);
+            Console.WriteLine();
+
+            Console.WriteLine("Part 5 - Group By");
+            Part5.GroupBy(people: people);
             Console.WriteLine();
         }
     }

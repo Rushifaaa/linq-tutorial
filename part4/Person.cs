@@ -9,17 +9,19 @@ namespace linq
         public int Age;
         public string Name;
         public string Lastname;
+        public string Job;
 
-        public Person(int age, string name, string lastname)
+        public Person(int age, string name, string lastname, string job)
         {
             this.Age = age;
             this.Name = name;
             this.Lastname = lastname;
+            this.Job = job;
         }
 
         public override string ToString()
         {
-            return Name + " " + Lastname + " is " + Age + " years old.";
+            return Job + " " + Name + " " + Lastname + " is " + Age + " years old.";
         }
 
     }

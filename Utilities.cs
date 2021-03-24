@@ -1,5 +1,3 @@
-using System;
-
 namespace linq
 {
     public enum Gender
