@@ -13,8 +13,8 @@ namespace linq
         {
             string[] names = { "Hans", "Peter", "Mustername", "Manfred", "Günther", "Gustav" };
 
-            Console.WriteLine("Part 1");
-            Part1.LinqTest(names: names);
+            Console.WriteLine("Part 1-2");
+            Part1_2.LinqTest(names: names);
 
             students.Add(new Student(degreeCourse: DegreeCourse.Biology, year: 3, name: "Sabrina", lastname: "Vogel"));
             students.Add(new Student(degreeCourse: DegreeCourse.German, year: 4, name: "Anton", lastname: "Buffberger"));
